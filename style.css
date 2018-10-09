@@ -1,0 +1,476 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	outline: none;
+	list-style-type: none;
+    font-family: consolas;
+}
+
+/*==================WRAPPER==================*/
+body{
+    background: #787878;
+}
+
+.wrapper{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/*==================HEADER==================*/
+header{
+    background: #222;
+    width: 100%;
+    padding-top: 2%;
+}
+nav:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+header nav span{
+    color: aliceblue;
+}
+header h2{
+	text-transform: uppercase;
+    float: left;
+    font-size: 26px;
+    padding-bottom: 10px;
+    color: aliceblue;
+}
+
+header nav ul{
+    float: right;
+    padding-top: 5px;
+   	-webkit-transition: all 1s ease-in-out;
+		-moz-transition: all 1s ease-in-out;
+		transition: all 1s ease-in-out;
+}
+/*header nav span{
+    padding: 0 10px
+}*/
+header nav ul li {
+    float: left;
+}
+header:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+header nav a{
+    text-transform: uppercase;
+    padding: 0 10px;
+    color: aliceblue;
+}
+header nav a:hover{
+    background: #eee;
+    color:darkslategray;
+}
+#active{
+    background: #eee;
+    color:darkslategray;
+}
+/*==================BANNER==================*/
+#banner{
+    position: relative;
+}
+.banner-back{
+    background: purple;
+    height: 100%;
+}
+#banner img{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.6;
+    border-radius: 5px;
+    display: block;
+}
+
+#banner h1{
+    color: #eee;
+    text-transform: uppercase;
+    position: absolute;
+    top:30%;
+    left: 20%;
+    text-align: left;
+    text-shadow: 2px 2px 5px black;
+}
+#banner p{
+    color: #eee;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    text-shadow: 1px 1px 1px #000;
+}
+
+
+/*==================MAIN FOR INDEX PAGE==================*/
+main{
+    background: #fff;
+    width: 100%;
+}
+main {
+    padding: 5% 0;    
+    border-top: 1px solid #787878;
+    background-image: url(images/sec1.jpg);
+    background-attachment: fixed;
+}
+.section1:after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.section1 figure img{
+    border-radius: 5px;
+    width: 100%;
+}
+.section1 figcaption{
+    font-family: serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 10px;
+}
+
+main .section1 ul{
+    float: left;
+    width: 30%;
+    
+}
+main .section1 ul:nth-child(2){
+    margin:0 5%;
+}
+
+/* =========================MAIN CONTENT FOR GALLERY PAGE============================*/
+#ragmain{
+	background-image: url(images/sec1.jpg);
+    background-attachment: fixed;
+}
+.gallery-img {
+	overflow: hidden;
+}
+.gallery-img h1 {
+	padding: 3%;
+	text-align: center;
+}
+.gallery {
+}
+.gallery img {	
+	float: left;
+	width: 48%;
+	margin:1%;
+	border-radius: 5px;
+}
+.gallery:hover {
+
+}
+
+.gallery img:hover {
+
+}
+
+/*===============ABOUT ME PAGE==============*/
+.aboutme h1, p{
+	padding: 20px;
+	text-align: justify;
+}
+.aboutme{
+	padding: 0px;
+	color: #fff;
+	background-color: rgba(0,0,0,0.9);
+	width: 100%;
+	border-radius: 10px;
+}
+.aboutimg img{
+	width: 100%;
+	height: 40%;
+	margin-top: 15px;
+	border-radius: 10px;
+}
+
+/*==================FOOTER==================*/
+footer{
+    background: #222;
+    color: aliceblue;
+    width: 100%;
+    padding: 20px 0;
+   
+}
+footer:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+footer ul h3{
+    text-transform: capitalize;
+    font-family: georgia, helvatica;
+    font-weight: bolder;
+}
+footer ul{
+    float: left;
+    width: 33%;
+}
+footer ul li{
+    width:100%;
+    padding: 5px;
+    margin-right: 50%
+}
+
+footer ul li img{
+	width: 40px;
+	height: 40px;
+	margin-top: 20px;
+}
+footer #socialmedia li {
+	display: inline;
+	margin: auto;
+	margin-top: 5px;	
+}
+.footer{
+    border-bottom: 1px solid #eee;
+}
+
+.menu{
+	display: none;
+}
+.navmenu{
+	display: none;
+}
+
+
+
+/*=================MEDIA QUERY FOR 950PX==================*/
+@media screen and (max-width: 950px){
+	#banner img{
+	    width: 100%;
+	    height: 60vh;
+	}
+	main .section1 ul{
+	}
+}
+/*=================MEDIA QUERY FOR 700PX==================*/
+	@media screen and (max-width: 700px){
+
+	  nav ul:after{
+	  	content: "";
+	  	display: block;
+	  	clear: both;
+	  }
+	  nav ul {
+	  	margin: 0 auto;
+	  }
+	  header{
+		background: #D92731;
+	  }
+	  header nav ul{
+	  	text-align: center;
+	  	float: none;
+	  	background-color: #3bbced;
+	  }
+	  
+	  footer{
+		background: #D92731;
+	  }
+	  header h2{
+		float: none;
+		display: block;
+		text-align: center;
+	  }
+	 
+	  main .section1 ul{
+		float: none;
+		width: 100%;
+		margin: 0 !important;
+
+	}
+	main .section1 ul figcaption{
+		text-align: center;
+		width: 70%;
+		display: block;
+		margin: 5px auto 10px auto;
+	}
+
+	#banner h1{
+		text-align: center;
+		font-size: 30px;
+		top:20%;
+		left: 25%;
+
+	}
+	#banner p{
+		font-size: 16px;
+		top:50%;
+		left: 25%;
+		width: 50%;
+		text-align: center;
+	}
+	.section1 figure img {
+    border-radius: 5px;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+	}
+	
+	footer ul{
+		width:80%;
+		float: none;
+		margin: 0% 10%;
+		padding-bottom: 2%;
+	}
+
+	header nav ul{
+		display: block;
+	}
+
+	.navmenu{
+		display: none;
+	}
+	.gallery-img {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+
+	}
+	.gallery img {
+	float: none;
+	width: 90%;
+	margin: 5px 0;
+	}
+
+	#banner img{
+    width: 100%;
+    height: 50vh;
+	}
+	
+	
+}
+/*=================MEDIA QUERY FOR 600PX==================*/
+@media screen and (max-width: 620px){
+
+	footer ul{
+		float: none;
+		margin: 0% 10%;
+		padding-bottom: 2%;
+	}
+	nav {
+		width: 100%;
+	}
+	nav ul{
+		float: none;
+		display: block;
+		margin: 0 auto;		
+		margin-left: 0;
+	}
+	nav ul li{
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom:3%;
+	}
+	
+	nav ul span{
+		display: none;
+	}
+	footer ul h3{
+		color: #000;
+	}
+	
+	header nav {
+		background-color: orange;
+		height: 35px;
+	}
+	.menu{
+		display: block;
+		text-align: right;
+		font-weight: bold;
+		padding-left: 8px;
+		padding-top: 9px;
+		width: 20px;
+		height: 20px;
+		background-image: url(images/menu.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		float: right;
+		margin-top: 4px;
+		cursor: pointer;
+		margin-right: 10px;
+	}
+
+	header nav ul{
+		display: none;
+		background-color: #3bbced;
+		border-top: 1px solid #000;
+	}
+	.navmenu{
+		display: block;
+		font-weight: bold;
+		padding: 5px;
+		font-size: 20px;
+	}
+	
+}
+/*=================MEDIA QUERY FOR 500PX==================*/
+
+@media screen and (max-width: 500px){
+
+	#banner h1{
+		text-align: left;
+		font-size: 20px;
+		top:20%;
+		left: 10%;
+
+	}
+	#banner p{
+		font-size: 12px;
+		top:50%;
+		left: 10%;
+		width: 50%;
+		text-align: left;
+	}
+
+	footer ul h3{
+		color: #000;
+	}
+	header nav {
+		background: #3bbced;
+		height: 35px;
+	}
+	.menu{
+		display: block;
+		text-align: right;
+		font-weight: bold;
+		padding-left: 8px;
+		padding-top: 9px;
+		width: 20px;
+		height: 20px;
+		background-image: url(images/menu.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		float: right;
+		margin-top: 4px;
+		cursor: pointer;
+		margin-right: 10px;
+	}
+	.navmenu{
+		font-weight: bold;
+		padding: 5px;
+
+		font-size: 20px;
+	}
+	
+	header nav ul{
+		display: none;
+	}
+	#banner img {
+	    width: 100%;
+	    height: 30vh;
+	}
+	
+}

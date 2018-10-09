@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+<!--========================HEADER========================-->
+        <header>
+            <div class="wrapper">
+                <h2 id="logo">p<sub>26</sub></h2>
+                <nav>
+                    <div class="menu" onclick="menu()"></div>
+                    <div class="navmenu" >MENU</div>
+                    <ul id="open">
+                        <li><a href="index.html" id="active">Home</a><span>|</span></li>
+                        <li><a href="about.html">About Me</a><span>|</span></li>
+                        <li><a href="ragday2017.html">Gallery</a><span>|</span></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+ <!--========================BANNER========================-->       
+        <div id="banner">
+            
+                <div class="banner-back">
+                   <img src="images/banner2.jpg">
+                    <h1>premier university <br>26<sup>th</sup> batch</h1>
+                    <p>all about our journy throughout the entire BBA program...</p>
+               </div>
+            
+        </div>
+        
+<!--========================MAIN========================-->       
+        <main>
+            <div class="wrapper">
+                <section class="section1">
+                    <ul>
+                        <li>
+                            <figure>
+                                <a href="ragday2017.html">
+                                    <img src="images/main1.jpg" alt="main image" title="Click The ImageTo See More">
+                                </a>
+                            </figure>
+                            <figcaption>
+                            preparation is going on to blast the floor..
+                                Cafe Marmaid 2017.
+                                preparation is going on to blast the floor..
+                                Cafe Marmaid 2017.
+                            </figcaption>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <figure>
+                                <a href="ragday2017.html">
+                                    <img src="images/main2.jpg" alt="main image" title="Click The ImageTo See More">
+                                </a>
+                            </figure>
+                            <figcaption>
+                            it is feast time...
+                                it is feast time...
+                                it is feast time...
+                                it is feast time...
+                                it is feast time...
+                            </figcaption>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <figure>
+                                <a href="ragday2017.html">
+                                    <img src="images/main3.jpg" alt="main image" title="Click The ImageTo See More">
+                                </a>
+                            </figure>
+                            <figcaption>
+                            yoo...its party time... yoo...its party time... yoo...its party time... yoo...its party time... yoo...its party time... yoo...its party time...
+                            </figcaption>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section class="section2">
+                    
+                </section>
+            </div>
+        </main>
+        
+<!--========================FOOTER========================-->       
+        <footer>
+            <div class="wrapper">
+                
+                    <ul>
+                    <li><h3>Contact us</h3></li>
+                    <li>We are located at
+                        <br>
+                        Dampara Wasa
+                        <br>Chittagong</li>
+                    <li>phone: 01683125912</li>
+                </ul>
+                <ul id="socialmedia">
+                    <li><h3>media</h3></li>
+                      <li>
+                       <a href="https://www.facebook.com/pages/Premier-University-BBA-26th-batch/537061326328271">
+                        <img src="https://i.imgur.com/aDu8IZw.png" target="_blank"/>
+                      </a>
+                    </li>
+                    <li>
+                       <a href="https://www.twitter.com">
+                        <img src="https://i.imgur.com/Lgvm7lf.png" target="_blank"/>
+                      </a>
+                    </li>
+                    <li>
+                       <a href="https://www.linkedin.com">
+                        <img src="https://i.imgur.com/i7dGsho.png" target="_blank"/>
+                      </a>
+                    </li>
+                    <li>
+                       <a href="https://www.youtube.com">
+                        <img src="https://i.imgur.com/ZdRdDrv.png" target="_blank"/>
+                      </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li><h3>developer</h3></li>
+                    <li>Mohammed rifat </li>
+                    <li>CEO: Ishtiaque Uddin Mohammed Rifat
+                        <br>
+                        phone: 01683125912
+                    </li>
+                </ul>
+               
+            </div>
+        </footer>
+
+
+
+    <script>
+        var toggleMenu = 1;
+        function menu(){
+            if(toggleMenu == 1){
+                document.getElementById("open").style.display = "block";
+                toggleMenu = 0;
+            }else if(toggleMenu == 0){
+                document.getElementById("open").style.display = "none";
+                toggleMenu = 1;
+            }
+        }
+
+    </script>
+    </body>
+</html>

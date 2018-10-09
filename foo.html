@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    .wrapper {      
+      overflow: hidden;
+      width: 100%;
+      max-width: 533px;
+      margin: 0 auto;
+    }
+    .image-slider {
+      width: 533px;
+      height: 300px;
+      display: table;
+    }
+    .image-slider .sm {
+      display: table-cell;
+      transition: cubic-bezier(.8,0,1,.29);
+    }
+    .sm {
+      animation-name: slider;
+      animation-duration: 50s;
+      animation-delay: 5s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+      animation-timing-function: cubic-bezier(0,1,0,1); 
+    }
+    @keyframes slider{
+      0%{ transform: translateX(0px);}
+      25%{ transform: translateX(-533px);}
+      50%{ transform: translateX(-1066px);}
+      75%{ transform: translateX(-533px);}
+      100%{ transform: translateX(0px);}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="image-slider">
+
+      <div class="sm">
+       <img src="images/images1.jpg">
+      </div>
+
+      <div class="sm">
+       <img src="images/images2.jpg">
+      </div>
+
+      <div class="sm">
+       <img src="images/images3.jpg"> 
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
